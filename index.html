@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyLogo</div>
+            <div class="toggle-button" id="toggle-button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="ecommerce.html">Shop</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Mobile Development</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+            </ul>
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to <a href="contact.html">reach out to us!</a></p>
+        </aside>
+        <main class="main-content">
+            <h1>Welcome to Our Website</h1>
+            <p>This is the main content area where you can provide information about your site.</p>
+            <p>Here you can put any additional information or features you'd like to showcase.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Thêm hoặc xóa class active khi nhấn button
+        });
+    </script>
+</body>
+
+</html>

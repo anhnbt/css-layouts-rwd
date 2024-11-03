@@ -1,0 +1,44 @@
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Bố trí theo chiều dọc */
+  gap: 15px; /* Khoảng cách giữa các trường */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Bố trí theo chiều dọc */
+}
+
+label {
+  margin-bottom: 5px; /* Khoảng cách giữa label và input */
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #272882;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3a48b2; /* Màu nền khi hover */
+}

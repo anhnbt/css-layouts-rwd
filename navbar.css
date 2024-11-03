@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272882; /* Đổi màu chủ đạo */
+  padding: 15px 20px;
+  color: white;
+  position: relative; /* Để button toggle có thể được căn chỉnh chính xác */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px; /* Thêm khoảng cách mặc định cho các liên kết */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #3a48b2; /* Màu nền nhẹ hơn một chút so với #3b3ba5 */
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng để tạo hiệu ứng nổi */
+}
+
+/* Button Toggle */
+.toggle-button {
+  display: none; /* Ẩn button toggle mặc định */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Thanh trong button */
+.toggle-button div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Chỉ hiển thị button toggle trên màn hình nhỏ */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Ẩn menu mặc định trên mobile */
+    flex-direction: column;
+    align-items: center; /* Căn giữa các mục menu */
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #272882;
+    padding: 15px 0;
+    border-top: 1px solid #3a48b2;
+  }
+
+  .nav-links.active {
+    display: flex; /* Hiển thị các liên kết khi button toggle được nhấn */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Khoảng cách giữa các mục menu */
+  }
+
+  .toggle-button {
+    display: flex; /* Hiển thị button toggle trên màn hình nhỏ */
+  }
+}

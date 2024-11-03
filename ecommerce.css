@@ -1,0 +1,50 @@
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; /* Khoảng cách giữa các sản phẩm */
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Phóng to sản phẩm khi hover */
+}
+
+.product-card img {
+  width: 100%; /* Chiều rộng hình ảnh 100% để vừa với card */
+  height: auto; /* Chiều cao tự động */
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0 15px; /* Khoảng cách dưới cùng cho margin */
+}
+
+.product-card button {
+  background-color: #272882; /* Màu xanh cho nút */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #3a48b2; /* Màu khi hover */
+}
